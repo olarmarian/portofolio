@@ -14,6 +14,10 @@ export default class Contact extends React.Component{
                 .then(()=>{
                     alert("Thank you!");
                 })
+                .catch(err => {
+                    console.log( err);
+                    
+                })
         })
     }
     render() {
