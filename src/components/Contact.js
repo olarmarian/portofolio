@@ -5,12 +5,12 @@ export default class Contact extends React.Component{
         return (
             <section id="contact" className="contact" data-aos="fade-in">
                 <h1>Contact me</h1>
-                <form form-name="contact"
+                <form name="contact"
                         method="POST"
-                        action="index.html"
                         className="contact-form"
                         netlify-honeypot="bot-field"
                         data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div>
                         <p>Name : </p>
                         <input id="name" type="text" name="name" placeholder="Enter name here"/>
