@@ -5,7 +5,7 @@ export default class Contact extends React.Component{
         return (
             <section id="contact" className="contact" data-aos="fade-in">
                 <h1>Contact me</h1>
-                <form method="post" className="contact-form" action="POST" data-netlify="true">
+                <form name = "contact" method="post" className="contact-form" data-netlify="true">
                     <div>
                         <p>Name : </p>
                         <input type="text" name="name" placeholder="Enter name here"/>
