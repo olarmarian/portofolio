@@ -6,7 +6,6 @@ export default class Contact extends React.Component{
             <section id="contact" className="contact" data-aos="fade-in">
                 <h1>Contact me</h1>
                 <form method="POST"
-                        action="POST"
                         className="contact-form" 
                         data-netlify="true">
                     <div>
@@ -21,7 +20,7 @@ export default class Contact extends React.Component{
                         <p>Message : </p>
                         <textarea id="message" name="message" placeholder="Enter message here" cols="80" rows="5"></textarea>
                     </div>
-                    <button className="send-btn" type="submit">Send</button>
+                    <input className="send-btn" type="submit" value="Send message"/>
                 </form>
             </section>
         );
