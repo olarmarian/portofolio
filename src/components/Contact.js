@@ -25,6 +25,7 @@ export default class Contact extends React.Component{
             <section id="contact" className="contact" data-aos="fade-in">
                 <h1>Contact me</h1>
                 <form name="contact"
+                        action="POST"
                         className="contact-form"
                         netlify-honeypot="bot-field"
                         data-netlify="true">
