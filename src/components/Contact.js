@@ -5,8 +5,10 @@ export default class Contact extends React.Component{
         return (
             <section id="contact" className="contact" data-aos="fade-in">
                 <h1>Contact me</h1>
-                <form method="POST"
-                        className="contact-form" 
+                <form form-name="contact"
+                        method="POST"
+                        className="contact-form"
+                        netlify-honeypot="bot-field"
                         data-netlify="true">
                     <div>
                         <p>Name : </p>
