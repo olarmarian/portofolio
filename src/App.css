@@ -241,6 +241,7 @@ i{
 
 .contact-form .send-btn{
   width: 30%;
+  padding: 10px;
   margin: 3em auto;
   background: rgba(153, 44, 59, 1);
   border: 1px solid #eee;
