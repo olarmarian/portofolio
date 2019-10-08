@@ -1,12 +1,26 @@
 import React from "react"
+import $ from "jquery"
 
 export default class Contact extends React.Component{
+    constructor(){
+        super();
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleSubmit(){
+        $("#send").submit(function(e){
+            e.preventDefault();
+            let $form = $(this);
+            $.post($form.attr("action"), $form.serialize())
+                .then(()=>{
+                    alert("Thank you!");
+                })
+        })
+    }
     render() {
         return (
             <section id="contact" className="contact" data-aos="fade-in">
                 <h1>Contact me</h1>
                 <form name="contact"
-                        method="POST"
                         className="contact-form"
                         netlify-honeypot="bot-field"
                         data-netlify="true">
@@ -23,7 +37,7 @@ export default class Contact extends React.Component{
                         <p>Message : </p>
                         <textarea id="message" name="message" placeholder="Enter message here" cols="80" rows="5"></textarea>
                     </div>
-                    <input className="send-btn" type="submit" value="Send message"/>
+                    <input onClick={this.handleSubmit} className="send-btn" type="submit" value="Send message"/>
                 </form>
             </section>
         );
