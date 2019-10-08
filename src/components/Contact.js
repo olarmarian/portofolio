@@ -8,7 +8,7 @@ export default class Contact extends React.Component{
                 <form method="POST"
                         action="POST"
                         className="contact-form" 
-                        netlify>
+                        data-netlify="true">
                     <div>
                         <p>Name : </p>
                         <input id="name" type="text" name="name" placeholder="Enter name here"/>
