@@ -9,6 +9,8 @@ export default class Contact extends React.Component{
     handleSubmit(){
         $("#send").submit(function(e){
             e.preventDefault();
+            console.log("ceva fain ?!?");
+            
             let $form = $(this);
             $.post($form.attr("action"), $form.serialize())
                 .then(()=>{
