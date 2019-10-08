@@ -12,7 +12,7 @@ export default class Contact extends React.Component{
                     </div>    
                     <div>
                         <p>Email : </p>
-                        <input type="text" name="email"  placeholder="Enter email here"  size="170"/>
+                        <input type="email" name="email"  placeholder="Enter email here"  size="170"/>
                     </div>
                     <div>
                         <p>Message : </p>
