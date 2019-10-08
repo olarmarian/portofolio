@@ -4,29 +4,30 @@ import $ from "jquery"
 export default class Contact extends React.Component{
     constructor(){
         super();
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
-    handleSubmit(){
-        $("#send").submit(function(e){
-            e.preventDefault();
-            console.log("ceva fain ?!?");
+    // handleSubmit(){
+    //     $("#send").submit(function(e){
+    //         e.preventDefault();
+    //         console.log("ceva fain ?!?");
             
-            let $form = $(this);
-            $.post($form.attr("action"), $form.serialize())
-                .then(()=>{
-                    alert("Thank you!");
-                })
-                .catch(err => {
-                    console.log( err);
+    //         let $form = $(this);
+    //         $.post($form.attr("action"), $form.serialize())
+    //             .then(()=>{
+    //                 alert("Thank you!");
+    //             })
+    //             .catch(err => {
+    //                 console.log( err);
                     
-                })
-        })
-    }
+    //             })
+    //     })
+    // }
     render() {
         return (
             <section id="contact" className="contact" data-aos="fade-in">
                 <h1>Contact me</h1>
                 <form name="contact"
+                        method="post"
                         className="contact-form"
                         netlify
                         netlify-honeypot="bot-field">
@@ -43,7 +44,7 @@ export default class Contact extends React.Component{
                         <p>Message : </p>
                         <textarea id="message" name="message" placeholder="Enter message here" cols="80" rows="5"></textarea>
                     </div>
-                    <input id="send" onClick={this.handleSubmit} className="send-btn" type="submit" value="Send message"/>
+                    <input id="send" className="send-btn" type="submit" value="Send message"/>
                 </form>
             </section>
         );
