@@ -7,7 +7,7 @@ export default function Projects(){
             <h1>Projects</h1>
             <div className="grid-projects">
                 <div>
-                    <img src={beard} alt="beardnhaircuts"/>
+                <img src={beard} alt="beardnhaircuts"/>             
                     <div className="after">
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/olarmarian/beardnhaircuts-react-js" ><i className="fab fa-github"/></a>
                         <a target="_blank" rel="noopener noreferrer" href="https://beardnhaircuts.netlify.com/"><i className="fas fa-external-link-square-alt"/></a>
