@@ -7,6 +7,7 @@ export default class Contact extends React.Component{
                 <h1>Contact me</h1>
                 <form form-name="contact"
                         method="POST"
+                        action="index.html"
                         className="contact-form"
                         netlify-honeypot="bot-field"
                         data-netlify="true">
