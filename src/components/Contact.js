@@ -41,7 +41,7 @@ export default class Contact extends React.Component{
                         <p>Message : </p>
                         <textarea id="message" name="message" placeholder="Enter message here" cols="80" rows="5"></textarea>
                     </div>
-                    <input onClick={this.handleSubmit} className="send-btn" type="submit" value="Send message"/>
+                    <input id="send" onClick={this.handleSubmit} className="send-btn" type="submit" value="Send message"/>
                 </form>
             </section>
         );
